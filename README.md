@@ -6,8 +6,8 @@ Goal: Fix the provided Terraform so a clean `terraform apply` runs inside the co
 
 Build once:
 ```bash
-docker build -t tf-debug-lab .
-docker run --rm -it -v "$(pwd)":/work -w /work tf-debug-lab
+docker build -t visa-terraform-problem .
+docker run --rm -it -v "$(pwd)":/work -w /work visa-terraform-problem
 ```
 
 Once inside the container, run the relevant terraform commands required so `terraform apply` succeeds
